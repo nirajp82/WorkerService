@@ -23,3 +23,4 @@ sc.exe create ".NET Joke Service" binpath=C:\Path\To\App.WindowsService.exe
 #### Reference:
 https://www.youtube.com/watch?v=PzrTiz_NRKA&ab_channel=IAmTimCorey
 https://docs.microsoft.com/en-us/dotnet/core/extensions/windows-service
+https://docs.microsoft.com/en-us/dotnet/core/extensions/workers
