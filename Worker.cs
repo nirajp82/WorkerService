@@ -12,7 +12,7 @@ namespace WebsiteStatus
     public class Worker : BackgroundService
     {
         private readonly ILogger<Worker> _logger;
-        private HttpClient client;
+        private HttpClient client; 
 
         public Worker(ILogger<Worker> logger)
         {
@@ -36,7 +36,7 @@ namespace WebsiteStatus
         {
             while (!stoppingToken.IsCancellationRequested)
             {
-                var result = await client.GetAsync("https://www.google.com");
+                var result = await client.GetAsync("https://www.google.com", stoppingToken);
 
                 if (result.IsSuccessStatusCode)
                 {
